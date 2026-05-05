@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Shop</title>
+    <script src="https://kit.fontawesome.com/160cb449a7.js" crossorigin="anonymous"></script>
+    <!-- boostrap start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- boostrap end -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+                <div class="container-fluid">
+
+                    <img src="img/logo.png" alt="" id="navimg">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li><a href="#home"><i class="fa-solid fa-house">&nbsp;</i>Home</a></li>
+                            <li><a href="#products"><i class="fa-solid fa-store"></i>&nbsp;Products</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-circle-info"></i>&nbsp;Services</a></li>
+                            <li><a href="#about"><i class="fa-solid fa-address-card"></i>&nbsp;About</a></li>
+                            <li><a href="#contact"><i class="fa-solid fa-phone"></i>&nbsp;Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- Button trigger modal -->
+
+                    <i class="fa-solid fa-user-plus fa-xl" id="signicon" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"></i>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><img src="img/unnamed.jpg" alt=""
+                                            id="modallogo">
+                                        <font
+                                            style="font-weight: bolder; color: rgb(0, 255, 255); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                            Sign in</font>
+                                    </h5>
+                                    <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="">
+                <h2>Welcome <font
+                        style="font-weight: bolder; color: aqua; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        CHAMA</font>
+                    <font
+                        style="font-weight: bolder; color: whitesmoke; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        COMPUTERS</font>
+                </h2>
+                <p>Your one-stop shop for all computer needs. Check out our latest
+                    offers and services!</p>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/82.jpg" class="d-block w-100" alt="..." id="caroselim">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/136.jpg" class="d-block w-100" alt="..." id="caroselim">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/137.jpg" class="d-block w-100" alt="..." id="caroselim">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/138.jpg" class="d-block w-100" alt="..." id="caroselim">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/139.jpg" class="d-block w-100" alt="..." id="caroselim">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/140.jpg" class="d-block w-100" alt="..." id="caroselim">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/141.jpg" class="d-block w-100" alt="..." id="caroselim">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/142.jpg" class="d-block w-100" alt="..." id="caroselim">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/143.jpg" class="d-block w-100" alt="..." id="caroselim">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left fa-2xl" id="carouselbtn"></i>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <i class="fa-solid fa-chevron-right fa-2xl" id="carouselbtn"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="">
+                <!-- <iframe width="1268" height="713" src="https://youtu.be/zuHwo0Dr55w?si=nHpKTuQLVT8qCmSJ"
+                    title="MAG CORELIQUID I SERIES | MSI" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zuHwo0Dr55w?si=PAoQ80Ljwj4Js9GH"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="products" class="product-section">
+            <div class="">
+
+                <div id="cartaddbtn">
+                    <i class="fa-solid fa-cart-shopping fa-2xl" id="cartBtn"></i>
+                </div>
+                <h2 id="heading">Our Products</h2>
+
+                <div class="product-list">
+                    <div class="card" data-card-id="1" data-card-price="100">
+                        <img src="img/6875.gif" alt="" class="card-image">
+                        <h3 class="card-name">450W Power Supply</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 1</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="2" data-card-price="100">
+                        <img src="img/1747.jpg" alt="" class="card-image">
+                        <h3 class="card-name">Headphone</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 2</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="3" data-card-price="100">
+                        <img src="img/3120.jpg" alt="" class="card-image">
+                        <h3 class="card-name">MSI Keybord</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 3</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="4" data-card-price="100">
+                        <img src="img/5105.jpg" alt="" class="card-image">
+                        <h3 class="card-name">Casing Fan</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 4</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="5" data-card-price="100">
+                        <img src="img/5422.jpg" alt="" class="card-image">
+                        <h3 class="card-name">165Hz Monitor</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 5</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="6" data-card-price="100">
+                        <img src="img/5748.jpg" alt="" class="card-image">
+                        <h3 class="card-name">MSI B650</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 6</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="7" data-card-price="100">
+                        <img src="img/6590.jpg" alt="" class="card-image">
+                        <h3 class="card-name">RTX 4070</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 7</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="8" data-card-price="100">
+                        <img src="img/6810.jpg" alt="" class="card-image">
+                        <h3 class="card-name">Headphone</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 8</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="9" data-card-price="100">
+                        <img src="img/6923.jpg" alt="" class="card-image">
+                        <h3 class="card-name">MSI 13th gen</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 9</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="10" data-card-price="100">
+                        <img src="img/6875.gif" alt="" class="card-image">
+                        <h3 class="card-name">Power Supply</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 10</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="11" data-card-price="100">
+                        <img src="img/6857.jpg" alt="" class="card-image">
+                        <h3 class="card-name">ROG Strick</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 11</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="12" data-card-price="100">
+                        <img src="img/6822.jpg" alt="" class="card-image">
+                        <h3 class="card-name">ASUS Vivobook</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 12</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="13" data-card-price="100">
+                        <img src="img/6810.jpg" alt="" class="card-image">
+                        <h3 class="card-name">Headphone</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 13</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="14" data-card-price="100">
+                        <img src="img/6701.jpg" alt="" class="card-image">
+                        <h3 class="card-name">Wireless Headphone</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 14</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="15" data-card-price="100">
+                        <img src="img/6674.jpg" alt="" class="card-image">
+                        <h3 class="card-name">MSI Mousepad</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 15</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="16" data-card-price="100">
+                        <img src="img/6590.jpg" alt="" class="card-image">
+                        <h3 class="card-name">RTX 4070</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 16</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="17" data-card-price="100">
+                        <img src="img/6503.jpg" alt="" class="card-image">
+                        <h3 class="card-name">Wireless Headphone</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 17</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="18" data-card-price="100">
+                        <img src="img/6389.jpg" alt="" class="card-image">
+                        <h3 class="card-name">ROG Casing</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 18</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="19" data-card-price="100">
+                        <img src="img/6335.jpg" alt="" class="card-image">
+                        <h3 class="card-name">Ultra Wide Monitor</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 19</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+                    <div class="card" data-card-id="20" data-card-price="100">
+                        <img src="img/6192.jpg" alt="" class="card-image">
+                        <h3 class="card-name">RTX 4070 (white)</h3>
+                        <p class="card-price">
+                            <font style="font-family: Arial, Helvetica, sans-serif; color: red; font-weight: bolder;">
+                                $ 100.00</font>
+                        </p>
+                        <p class="card-description">Description Item For 20</p>
+                        <span>Quantity</span>
+                        <input type="number" min="1" class="card-quantity" value="1"><br>
+                        <button class="add-button">Add</button>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <section id="services" class="service-section">
+            <div class="container">
+                <h2 id="heading">Our Services</h2>
+                <div class="service-list">
+                    <div class="service">
+                        <h3>Repair Services</h3>
+                        <!-- <img src="img/360_F_410310701_irVZAyvCWWYCiYDdvrF0wLEhjOCsXCb5.jpg" alt="" class="service-img"> -->
+                        <video class="service-img" autoplay muted>
+                            <source src="img/videoplayback (1).mp4" type="video/mp4">
+                        </video>
+                        <p>Fast and reliable computer repair services for all brands and models. Lorem ipsum dolor, sit
+                            amet consectetur adipisicing elit. Vitae nemo cum explicabo dicta veniam ex excepturi
+                            voluptatibus, itaque, commodi est nobis a deleniti in. Sunt nam illo iure sit beatae?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto a earum blanditiis assumenda
+                            velit sit asperiores explicabo id quia veritatis inventore, perspiciatis porro aperiam
+                            eaque, harum at rerum distinctio cumque.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <h3>Maintenance</h3>
+                        <!-- <img src="img/PC-Tuneup.jpg" alt="" class="service-img"> -->
+                        <video class="service-img" autoplay muted>
+                            <source src="img/Thermaltake Tower 500 Build up.mp4" type="video/mp4">
+                        </video>
+                        <p>Regular maintenance to keep your system running smoothly and efficiently. Lorem ipsum dolor,
+                            sit amet consectetur adipisicing elit. Cumque, pariatur! Adipisci odit atque eos aliquid
+                            neque minus a vitae possimus! Eum asperiores nemo distinctio aliquid voluptatibus libero
+                            error atque quisquam.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta expedita a id minima
+                            doloribus voluptate consequatur dolore provident accusamus quos. Dolor in perspiciatis,
+                            quaerat voluptatibus qui excepturi fugit possimus odio?
+
+                        </p>
+                    </div>
+                    <div class="service">
+                        <h3>Custom Builds</h3>
+                        <!-- <img src="img/DSCF7948-800x533.jpg" alt="" class="service-img"> -->
+                        <video class="service-img" autoplay muted>
+                            <source src="img/videoplayback.mp4" type="video/mp4">
+                        </video>
+                        <p>Custom-built computers tailored to your specific needs and requirements. Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Ipsa, perspiciatis molestias! Esse dolores, sequi
+                            neque soluta illo laborum praesentium iste asperiores, facere nihil veniam? Sunt libero
+                            aliquam asperiores magni voluptatibus.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nostrum culpa explicabo
+                            corrupti, illo corporis accusamus, cumque laborum, veritatis saepe temporibus sed ipsam
+                            omnis ab quod quam exercitationem sit blanditiis!
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 id="heading">About US</h2>
+                <p>
+                <h3>
+                    <font
+                        style="font-weight: bolder; color: aqua; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        CHAMA</font>
+                    <font
+                        style="font-weight: bolder; color: whitesmoke; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        COMPUTERS</font>
+                </h3>
+                <br>
+                At Chama Computers, we’re passionate about technology and dedicated to providing top-notch service to
+                our
+                community. Located in [Your Location], we’ve been serving customers with reliable and innovative
+                computer solutions since 2022.
+                <br><br>
+                <h4>Our Mission</h4>
+                Our mission is simple: to deliver exceptional service and support for all your computer needs. Whether
+                you’re a home user, a small business, or a tech enthusiast, we’re here to help you find the right
+                solutions to keep you connected and productive.
+                <br><br>
+                <h4>What We Offer</h4>
+                <ul>
+                    <li>
+                        Computer Sales: Explore our wide range of computers, from high-performance gaming rigs to
+                        efficient office setups. We carry top brands and can help you find the perfect machine tailored
+                        to your needs.
+                    </li>
+                    <li>
+                        Repair Services: Our skilled technicians provide quick and reliable repair services for all
+                        types of computers. From hardware issues to software problems, we’ve got you covered.
+                    </li>
+                    <li>
+                        Upgrades & Custom Builds: Looking to enhance your current system or build a custom computer from
+                        scratch? We offer expert advice and installation to ensure your machine performs at its best.
+                    </li>
+                    <li>
+                        Technical Support: Our friendly staff is here to assist you with any technical questions or
+                        concerns. Whether it’s troubleshooting, software installation, or data recovery, we’re just a
+                        call or visit away.
+                    </li>
+                </ul>
+                <h4>Why Choose Us? </h4>
+                <ul>
+                    <li>
+                        Expertise: Our team has years of experience in the computer industry, ensuring you receive
+                        knowledgeable and accurate assistance.
+                    </li>
+                    <li>
+                        Customer-Centric: We prioritize your needs and strive to provide personalized solutions and
+                        exceptional customer service.
+                    </li>
+                    <li>
+                        Quality: We use only high-quality parts and trusted brands to ensure durability and performance
+                        in every product and service we offer.
+                    </li>
+                    <li>
+                        Community Focused: As a local business, we are committed to supporting our community and
+                        building lasting relationships with our customers.
+                    </li>
+                </ul><br>
+                <div class="container" id="adout-img-container">
+                    <div class="aboutimg">
+                        <img src="img/309359548_3256078337943273_351432679876346799_n.jpg" alt="" id="chamaimg">
+                    </div>
+                    <div class="aboutimg">
+                        <img src="img/310234072_3257280904489683_4069141670422384220_n.jpg" alt="" id="chamaimg">
+                    </div>
+                </div>
+                <br>
+                Thank you for choosing Chama Computers. We look forward to serving you and helping you achieve your tech
+                goals. For any inquiries or to schedule a visit, feel free to contact us at <br> <a href="">+94 76 482
+                    3793</a> or drop by our store at <a href="">nadeejaamaraweera@gmail.com</a>.
+
+                Stay connected with us on <a href="https://www.instagram.com/nadee_am?igsh=MWRncTIycnBuenRqZQ==">Chama
+                    Computers Instergram</a> to keep up with the latest tech trends and special offers!</p>
+
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 id="heading">Contact Us</h2>
+                <p>We would love to hear from you! Please fill out the form below or reach out to us using the contact
+                    details provided.</p>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                <br>
+
+                <h4>
+                    <font
+                        style="font-weight: bolder; color: aqua; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        Chama</font>
+                    <font
+                        style="font-weight: bolder; color: whitesmoke; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        BlazeeX Store: </font>
+                </h4>
+                <br>
+                <p><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.623456173664!2d79.95005117499882!3d7.1694524928353545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2e52cc7448281%3A0x20594848936743d7!2sChama%20Computers%20%7C%20Chama%20BlazeeX%20Store%20-%20Minuwangoda!5e0!3m2!1sen!2slk!4v1723734436178!5m2!1sen!2slk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+        </section>
+    </main>
+    <div class="fasthome">
+        <a href="#nav" id="fasthomeicon"><i class="fa-solid fa-circle-up fa-2xl"></i></a>
+
+    </div>
+    <div class="slide-panel" id="slidePanel">
+        <span id="closeBtn">&times;</span>
+        <div id="panelContent"></div>
+        <div id="grandTotal">Grand Total: $0.00</div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chama Computers. All rights reserved. <br>+94 76 456 435, +91 568 698</p>
+            <div class="socialicon">
+                <i class="fa-brands fa-square-facebook fa-2xl" id="fbicon"><a href=""></a></i>
+                <i class="fa-brands fa-square-instagram fa-2xl" id="instericon"><a href=""></a></i>
+                <i class="fa-brands fa-square-twitter fa-2xl" id="twiicon"><a href=""></a></i>
+                <i class="fa-brands fa-square-youtube fa-2xl" id="yticon"><a
+                        href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbGxxbzh3TktZbUhjdEs3V0VNQzRDQjNQazJGUXxBQ3Jtc0trbUNiSVprWlBPZGlnNXdSOUJZNE1Cc19ZVl9YZnlONDlNZXlRdno3R293RC10NldvZ1BqYUdocVRZUkVrRTZCelF0NEtkc0UycnlTdk9vaXBBclhEbjJBSXNHU2liWnljX0trb2l4cGo2a0FQTUdCNA&q=https%3A%2F%2Fwww.instagram.com%2Fchama_computers%3Ffbclid%3DIwAR0UHc8WM-Ii4ySSA6qvbIMOcXtPRATDutaR8d6dio6-cBywZrkd_lkBQ20"></a></i>
+                <a href="linkedin.com/company/90684853/admin/feed/posts"><i class="fa-brands fa-linkedin fa-2xl"
+                        id="linkicon"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    let cards = document.querySelectorAll('.card');
+    let slidePanel = document.getElementById('slidePanel');
+    let slidePanel2 = document.getElementById('slidePanel2');
+    let loginBtn = document.getElementById('loginBtn');
+    let panelContent = document.getElementById('panelContent');
+    let closeBtn = document.getElementById('closeBtn');
+    let closeBtn2 = document.getElementById('closeBtn2');
+    let grandTotalElement = document.getElementById('grandTotal');
+    let cartBtn = document.getElementById('cartBtn');
+    let addedCards = new Set();
+
+    cards.forEach(card => {
+        card.querySelector('.add-button').addEventListener('click', function () {
+            let cardId = card.getAttribute('data-card-id');
+            if (!addedCards.has(cardId)) {
+
+                let cardName = card.querySelector('.card-name').textContent;
+                let cardPrice = parseFloat(card.getAttribute('data-card-price'));
+                let cardDescription = card.querySelector('.card-description').textContent;
+                let cardQuantity = card.querySelector('.card-quantity').value;
+                let cardImage = card.querySelector('.card-image').src;
+
+                addCardDetails(cardId, cardName, cardPrice, cardDescription, cardQuantity, cardImage);
+
+
+
+
+            } else {
+                alert('This Card Has Already Exist');
+            }
+        });
+        function addCardDetails(id, name, price, description, quantity, image) {
+            let addCardDetails = `
+            <div class="panel-item" data-card-id="${id}">
+        <img src="${image}" alt="${name}" class="card-image">
+        <h3>${name}</h3>
+        <p class="price">$${price.toFixed(2)}</p>
+        <p>${description}</p>
+        <button class="remove-btn" data-card-id="${id}">Remove</button>
+        <div class="quantity">
+            <span>Quantity</span>
+            <input type="number" value="${quantity}" min="1" data-card-id="${id}" class="quantityclz" />
+
+        </div>
+        <p class="total-price" data-card-id="${id}">Total: $${(price * quantity).toFixed(2)}</p>
+    </div>
+            `;
+
+            panelContent.insertAdjacentHTML('beforeend', addCardDetails);
+            addedCards.add(id);
+            // slidePanel.classList.add('active');
+
+            //Add Evevnt Listner For Remove Button
+            document.querySelector(`.panel-item[data-card-id="${id}"] .remove-btn`).addEventListener('click', function () {
+                removeDetails(id);
+            });
+
+            //Add Evevnt Listner For Calculate Quantity
+            document.querySelector(`.panel-item[data-card-id="${id}"] .quantity input`).addEventListener('click', function () {
+                updateTotalPrice(id, price);
+            });
+
+            //Update Grand Total
+            updateGrandTotal();
+        };
+
+
+        cartBtn.onclick = function () {
+            slidePanel.classList.add('active');
+        };
+        closeBtn.addEventListener('click', function () {
+            slidePanel.classList.remove('active');
+        });
+
+
+        function removeDetails(id) {
+            const panelItem = document.querySelector(`.panel-item[data-card-id="${id}"]`);
+            if (panelItem) {
+                panelItem.remove();
+                addedCards.delete(id);
+                updateGrandTotal();
+            }
+        }
+
+        function updateTotalPrice(id, price) {
+            const quantityInput = document.querySelector(`.quantity input[data-card-id="${id}"]`);
+            const totalPriceElement = document.querySelector(`.total-price[data-card-id="${id}"]`);
+            const quantity = parseFloat(quantityInput.value);
+            const totalPrice = (price * quantity).toFixed(2);
+            totalPriceElement.textContent = `Total: $${totalPrice}`;
+            updateGrandTotal();
+        }
+
+        function updateGrandTotal() {
+            let gradnTotal = 0;
+            document.querySelectorAll('.total-price').forEach(totalPriceElement => {
+                const total = parseFloat(totalPriceElement.textContent.replace('Total: $', ''));
+                gradnTotal += total;
+            });
+
+            grandTotalElement.textContent = `Grand Total: $${gradnTotal.toFixed(2)}`;
+        }
+
+
+
+    });
+</script>
+
+</html>
